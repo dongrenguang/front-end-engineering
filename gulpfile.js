@@ -6,7 +6,8 @@ const runSequence = require("run-sequence");
 const uglify = require("gulp-uglify");
 
 const SRC_PATH = "./src";
-const DEST_PATH = "./public/assets";
+const DEST_PATH = "./public";
+const ASSETS_PATH = `${DEST_PATH}/assets`;
 
 gulp.task("default", [ "build" ]);
 
@@ -29,7 +30,7 @@ gulp.task("build-js", () => {
             presets: [ "es2015" ]
         }))
         .pipe(uglify())
-        .pipe(gulp.dest(DEST_PATH));
+        .pipe(gulp.dest(ASSETS_PATH));
 });
 
 gulp.task("build-vendor", () => {
@@ -39,5 +40,5 @@ gulp.task("build-vendor", () => {
         ])
         .pipe(uglify())
         .pipe(concat("vendor.js"))
-        .pipe(gulp.dest(DEST_PATH));
+        .pipe(gulp.dest(ASSETS_PATH));
 });
