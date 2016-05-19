@@ -5,3 +5,4 @@
 5. index.js
 6. npm install --save-dev jquery@1.
 7. npm install --save-dev gulp-concat
+8. npm prune // clear unused modules.
