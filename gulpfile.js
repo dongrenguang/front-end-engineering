@@ -1,7 +1,7 @@
+const babel = require("gulp-babel");
 const gulp = require("gulp");
 const rimraf = require("gulp-rimraf");
 const runSequence = require("run-sequence");
-const babel = require("gulp-babel");
 
 const SRC_PATH = "./src";
 const DEST_PATH = "./public/assets";
