@@ -24,8 +24,7 @@ coverage
 build/Release
 
 # Compiled client assets
-public/assets
-public/index.html
+public
 
 # Dependency directory
 node_modules
